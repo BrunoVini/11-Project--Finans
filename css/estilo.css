@@ -1,0 +1,202 @@
+html,  body {
+	overflow-x: hidden;
+}
+
+#home {
+	background: #ffc107;
+	color: #fff;
+}
+
+.caixa {
+	padding: 60px;
+	border: 1px solid #e5e5e5;
+}
+
+#header{
+	width: 100%;
+	font-size: 0.8em;
+}
+
+#header .display-4 {
+	font-size: 3.4em;
+}
+
+footer ul li a {
+	margin: 5px 15px; font-size: 1.1em; 
+}
+
+.rodape {
+	color: rgba(0,0,0,0.6);
+	margin-top: 20px;
+	text-align: center;
+}
+
+.rodape h6 {
+	font-size: 0.8em;
+}
+
+
+
+/* Entrar */
+.cadastrar {
+	display: flex;
+	float: left;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	align-items: center;
+	color: #fff;
+	justify-content: center;
+    display: none;
+}
+
+.entrar {
+	width: 100%;
+	height: 70%;
+	background: goldenrod;
+}
+
+i.fechar, .apagar {
+	float: right;
+	margin: 5px 10px;
+	font-size: 25px;
+	color: rgba(0,0,0,0.8);
+	cursor: pointer;
+}
+
+i.fechar:hover, i.apagar:hover {
+	color: rgba(0,0,0,0.2);
+}
+
+.login {
+	margin-top: 30px;
+	text-align: center;
+	background: ;
+}
+
+.login form {
+	width: 90%;
+	margin: auto;
+}
+
+.login h3 {
+	margin: auto;
+	padding-left: 10%;
+}
+
+.login div {
+	position: relative;
+}
+
+.login input.text{
+	background: #E7E6E9;
+	width: 70%;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 1.5px solid #fff;
+	color: #fff;
+	width: 100%;
+}
+
+.login input.text:focus ~ label, .login input.text:valid ~ label {
+	font-size: 0.7em;
+	bottom: 30px;
+}
+
+.login label {
+	color: #fff;
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	transition: 500ms;
+}
+
+.login i.fechar, .login i.apagar {
+	color: #fff;
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	font-size: 1em;
+}
+
+
+
+@keyframes buttonEffect{
+	from {
+		background-color: gold;
+	}
+	to {
+		background-color: goldenrod;
+	}
+}
+
+
+.login form #submit {
+	width: 100%;
+	color: #fff;
+	background: gold;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px 15px;
+	margin-top: 10px;
+}
+
+#show {
+	cursor: pointer;
+	position: relative;
+	width: 50%;
+	top: -10px;
+	left: 15px;
+	margin-left: auto;
+}
+
+.showpassword {
+	text-align: left;
+	font-size: 0.8em;
+	opacity: 0.8;
+	position: relative;
+	top: -10px;
+}
+
+
+@media (min-width: 500px) {
+	.cadastrar .entrar{
+		width: 400px;
+	}
+}
+
+@media (min-width: 575.98px) { 
+	#header .display-4 {
+		font-size: 4em;
+	}
+	#header{
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.botao {
+		margin-left: 20px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.botao {
+		margin-left: 20px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.botao {
+		margin-left: 20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.botao {
+		margin-left: 20px;
+	}
+}

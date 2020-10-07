@@ -1,0 +1,57 @@
+header .closed {
+    outline: 0;
+    border: 0;
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 35px;
+}
+
+header .closed i {
+    display: inline-block;
+    background: #fff;
+    width: 90%;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+    transition: all 400ms;
+}
+
+header .open i {
+    background: transparent;
+} 
+
+header .closed i::before, header .closed i::after {
+    content: '';
+    display: inline-block;
+    background: #fff;
+    width: 95%;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+    transition: all 400ms;
+}
+
+header .closed i::before {
+    transform: translate(-50%, 140%);
+}
+
+header .open i::before {
+    transform: rotate(45deg);
+    left: 4%;   
+}
+
+header .closed i::after {
+    transform: translate(-50%, -240%);
+}
+
+header .open i::after {
+    transform: rotate(-45deg);
+    left: 4%;
+}
